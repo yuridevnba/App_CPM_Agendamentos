@@ -6,9 +6,6 @@ import axios from 'axios';
 import useUser from '../../api/Contexts/UsersContext';
 import { useNavigation } from '@react-navigation/native';
 
-
-
-
 const ButtonList = () => {
   const buttons = [
     
@@ -84,8 +81,7 @@ export default function App() {
        clienteId
 
       });
-      //navigation.navigate('CPM');
-      
+   
       console.log(response.data);
       
       Alert.alert( 'Agendamento realizado com sucesso');
@@ -93,7 +89,6 @@ export default function App() {
     
     
     } catch (error) {
-      //console.log('Erro ao fazer login:', error);
       Alert.alert('Erro', 'Ocorreu um erro ao fazer agendamento');
     }
   };
@@ -183,8 +178,6 @@ const styles = StyleSheet.create({
   Texto1: {
     fontSize: 20,
     fontFamily: 'Roboto',
-    //marginTop: '-15%',
-   // marginLeft: '6%',
     color: '#black',
   },
 
@@ -195,7 +188,6 @@ const styles = StyleSheet.create({
     height:'-50%',
     marginLeft:'auto',
     marginRight:'auto',
-    //selectedDotColor: '#00898d'
    },
 
    horario:{
@@ -209,8 +201,6 @@ const styles = StyleSheet.create({
     height: '10%',
     //resizeMode: 'cover',
     backgroundColor:'white',
-    //marginLeft:'auto',
-    //marginRight:'auto',
     marginTop:10,
     borderRadius:10,
     marginBottom:10
@@ -246,12 +236,7 @@ const styles = StyleSheet.create({
     borderColor:'#0893ff',
     //backgroundColor: '#c8ffff',
     marginRight:10,
-    //backgroundColor: '#8ABAD9',
-    //paddingVertical: 10,
-    //paddingHorizontal: 5,
     borderRadius: 5,
-   // top: '-3%',
-    //left: '70%',
     marginTop:10,
     alignItems: 'center',
     justifyContent: 'center',
@@ -284,13 +269,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginRight:'auto',
     marginLeft:'auto',
-    //backgroundColor: '#8ABAD9',
-    //paddingVertical: 10,
-    //paddingHorizontal: 5,
     borderRadius: 5,
-   // top: '-3%',
-    //left: '70%',
-    //marginTop:15,
     alignItems: 'center',
     justifyContent: 'center',
     width:'50%',

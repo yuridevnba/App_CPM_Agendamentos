@@ -1,8 +1,5 @@
 import React, { useState , useEffect } from 'react';
 import { View ,StyleSheet,ImageBackground,ActivityIndicator,TouchableOpacity,Text} from 'react-native';
-//import { Container } from './styles';
-{/*import logo from '';*/}
-{/*import AsyncStorage from '@react-native-async-storage/async-storage';*/}
 import { useNavigation } from '@react-navigation/native';
 
 
@@ -18,48 +15,8 @@ export default ()=>{
     navigation.navigate('Login');
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-  {/*const navigation = useNavigation();*/}
-  {/*const [isLoading, setIsLoading] = useState(true);*/}
-
-  {/*useEffect(() => {
-
-    const chekToken = async ()=>{
-
-      const token = await AsyncStorage.getItem('token');
-      if(token){
-        //validar o token
-
-      } else{
-           navigation.navigate('Registration');
-      }
-      chekToken();
-    }
-    // Simule um tempo de carregamento
-    {/*setTimeout(() => {
-      setIsLoading(false);
-    }, 18000);
-  }, []);*/}
-
     return (
       <View style={styles.container}>
-        {/*{isLoading ? (
-          <View style={styles.loadingContainer}>
-            <ActivityIndicator size="large" color="#000000" />
-          </View>
-        ) : (
-          <View>*/}
             <ImageBackground
               source={{
                 uri:

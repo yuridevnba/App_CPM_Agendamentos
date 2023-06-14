@@ -17,7 +17,6 @@ export default () => {
  
   const navigation = useNavigation();
  
-
   const handleLogin = async () => {
     try {
       const response = await axios.post('https://backend-scheduling-n00p.onrender.com/login', {
